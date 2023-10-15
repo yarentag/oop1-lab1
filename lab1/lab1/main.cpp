@@ -24,3 +24,13 @@ double calculateAverage(const int numbers[], int count) {
     int sum = calculateSum(numbers, count);
     return static_cast<double>(sum) / count;
 }
+// Function to find the smallest number
+int findSmallest(const int numbers[], int count) {
+    int smallest = numbers[0];
+    for (int i = 1; i < count; ++i) {
+        if (numbers[i] < smallest) {
+            smallest = numbers[i];
+        }
+    }
+    return smallest;
+}
