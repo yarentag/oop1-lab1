@@ -19,3 +19,8 @@ int calculateProduct(const int numbers[], int count) {
     }
     return product;
 }
+// Function to calculate the average of numbers
+double calculateAverage(const int numbers[], int count) {
+    int sum = calculateSum(numbers, count);
+    return static_cast<double>(sum) / count;
+}
